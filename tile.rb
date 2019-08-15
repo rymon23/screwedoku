@@ -25,3 +25,4 @@ class Tile
       @value = new_value
     end
   end
+end
