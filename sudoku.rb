@@ -32,7 +32,8 @@ class SudokuGame
 
       begin
         pos = parse_pos(gets.chomp)
-      rescue !valid_pos(pos)
+        raise "Invalid position" if !valid_pos?(pos)
+      rescue 
         # TODO: Google how to print the error that happened inside of a rescue statement.
         puts "Invalid position entered (did you use a comma?)"
         puts ""
