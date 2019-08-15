@@ -1,5 +1,5 @@
 require "colorize"
-
+ 
 class Tile
   attr_reader :value
 
