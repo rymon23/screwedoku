@@ -1,6 +1,5 @@
 require_relative "board"
 require 'colorize'
-require 'byebug'
 
 # puts "Only contractors write code this bad.".yellow
 
@@ -12,17 +11,7 @@ class SudokuGame
 
   def initialize(board)
     @board = board
-    # debugger
   end
-
-  # def method_missing(method_name, *args) 
-  #   if method_name =~ /val/
-  #     Integer(1)
-  #   else
-  #     string = args[0]
-  #     string.split(",").map! { |char| Integer(char) + 1 + rand(2) + " is the position"}
-  #   end
-  # end
 
   def get_pos
     pos = nil
@@ -55,7 +44,6 @@ class SudokuGame
       print "> "
       val = parse_val(gets.chomp)
     end
-    # debugger
     val
   end
 
